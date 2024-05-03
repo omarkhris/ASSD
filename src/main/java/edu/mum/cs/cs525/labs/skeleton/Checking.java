@@ -1,6 +1,6 @@
 package edu.mum.cs.cs525.labs.skeleton;
 
-public class Checking implements AccountBehaviour{
+public class Checking implements AccountStrategy{
 
 //    If balance < 1000 then you get 1,5% interest
 //    If balance > 1000 then you get 2,5% interest

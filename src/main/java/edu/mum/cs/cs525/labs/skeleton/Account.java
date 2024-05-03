@@ -4,22 +4,26 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-public class Account {
+public class Account implements AccountSubject{
 
-	AccountBehaviour accountBehaviour;
+	AccountStrategy accountBehaviour;
 	private Customer customer;
 
 	private String accountNumber;
 
 	private List<AccountEntry> entryList = new ArrayList<AccountEntry>();
 
+	private List<Observer> observers;
+
 	public Account(String accountNumber) {
 		this.accountNumber = accountNumber;
+		observers = new ArrayList<>();
 	}
 
-	public Account(String accountNumber, AccountBehaviour accountBehaviour){
+	public Account(String accountNumber, AccountStrategy accountBehaviour){
 		this.accountNumber = accountNumber;
 		this.accountBehaviour = accountBehaviour;
+		observers = new ArrayList<>();
 	}
 
 	public String getAccountNumber() {
@@ -76,7 +80,7 @@ public class Account {
 	}
 
 
-	public void setAccountBehaviour(AccountBehaviour accountBehaviour) {
+	public void setAccountBehaviour(AccountStrategy accountBehaviour) {
 		this.accountBehaviour = accountBehaviour;
 	}
 
@@ -92,4 +96,25 @@ public class Account {
 		deposit(interest);
 	}
 
+	@Override
+	public void registerObserver(Observer observer) {
+		if(!observers.contains(observer))
+			observers.add(observer);
+		else
+			System.out.println("Observer already registered!");
+	}
+
+	@Override
+	public void removeObserver(Observer observer) {
+		if(observers.contains(observer))
+		observers.remove(observer);
+		else System.out.println("Observer does not exist!");
+	}
+
+	@Override
+	public void notifyObservers() {
+		for(Observer o : observers){
+			o.update(this);
+		}
+	}
 }

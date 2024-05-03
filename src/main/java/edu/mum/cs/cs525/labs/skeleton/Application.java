@@ -2,22 +2,37 @@ package edu.mum.cs.cs525.labs.skeleton;
 
 public class Application {
 	public static void main(String[] args) {
+
+		SMSSender smsSender = new SMSSender();
+		EmailSender emailSender = new EmailSender();
+		LoggerClass loggerClass = new LoggerClass();
+
 		AccountService accountService = new AccountServiceImpl();
+
+		Account account1 = new Account("323232");
+//		account1.registerObserver(smsSender);
+//		account1.registerObserver(emailSender);
+//		account1.notifyObservers();
+
+		accountService.registerObserver(emailSender);
+		accountService.registerObserver(loggerClass);
+		accountService.registerObserver(smsSender);
 
 		// create 2 accounts;
 		accountService.createAccount("1263862", "Frank Brown",	"checking");
 
 		accountService.createAccount("4253892", "John Doe", "saving");
-
+		accountService.notifyObservers();
 		// use account 1;
 		accountService.deposit("1263862", 240);
 		accountService.deposit("1263862", 529);
 		accountService.withdraw("1263862", 230);
+		accountService.notifyObservers();
 		// use account 2;
 		accountService.deposit("4253892", 12450);
 		accountService.transferFunds("4253892", "1263862", 100, "payment of invoice 10232");
 		// show balances
-
+		accountService.notifyObservers();
 		for (Account account : accountService.getAllAccounts()) {
 			account.performInterestRate();
 		}

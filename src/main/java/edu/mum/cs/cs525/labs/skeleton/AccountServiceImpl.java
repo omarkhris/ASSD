@@ -1,12 +1,19 @@
 package edu.mum.cs.cs525.labs.skeleton;
 
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 
 public class AccountServiceImpl implements AccountService {
 	private AccountDAO accountDAO;
-	
+
+	private List<Observer> observers;
+
+
+
 	public AccountServiceImpl(){
 		accountDAO = new AccountDAOImpl();
+		observers = new ArrayList<>();
 	}
 
 	public Account createAccount(String accountNumber, String customerName, String accountType) {
@@ -59,6 +66,28 @@ public class AccountServiceImpl implements AccountService {
 		fromAccount.transferFunds(toAccount, amount, description);
 		accountDAO.updateAccount(fromAccount);
 		accountDAO.updateAccount(toAccount);
+	}
+
+	@Override
+	public void registerObserver(Observer observer) {
+		if(!observers.contains(observer))
+			observers.add(observer);
+		else
+			System.out.println("Observer already registered!");
+	}
+
+	@Override
+	public void removeObserver(Observer observer) {
+		if(observers.contains(observer))
+			observers.remove(observer);
+		else System.out.println("Observer does not exist!");
+	}
+
+	@Override
+	public void notifyObservers() {
+		for(Observer o : observers){
+			o.update(this);
+		}
 	}
 
 

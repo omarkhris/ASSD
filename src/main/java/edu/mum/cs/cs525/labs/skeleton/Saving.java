@@ -1,6 +1,6 @@
 package edu.mum.cs.cs525.labs.skeleton;
 
-public class Saving implements AccountBehaviour {
+public class Saving implements AccountStrategy {
 
 //    If balance < 1000 then you get 1% interest
 //    If balance > 1000 and balance < 5000 then you get 2% interest

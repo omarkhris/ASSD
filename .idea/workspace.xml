@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2ea0b959-0462-4ef7-b11c-4e5f97b723c0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/mum/cs/cs525/labs/skeleton/EmailSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/mum/cs/cs525/labs/skeleton/SMSSender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Class diagram.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/mum/cs/cs525/labs/skeleton/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/mum/cs/cs525/labs/skeleton/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/mum/cs/cs525/labs/skeleton/AccountBehaviour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/mum/cs/cs525/labs/skeleton/AccountStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/mum/cs/cs525/labs/skeleton/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/mum/cs/cs525/labs/skeleton/AccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/mum/cs/cs525/labs/skeleton/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/mum/cs/cs525/labs/skeleton/AccountServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/mum/cs/cs525/labs/skeleton/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/mum/cs/cs525/labs/skeleton/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/mum/cs/cs525/labs/skeleton/Checking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/mum/cs/cs525/labs/skeleton/Checking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/mum/cs/cs525/labs/skeleton/Saving.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/mum/cs/cs525/labs/skeleton/Saving.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/mum/cs/cs525/labs/skeleton/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/mum/cs/cs525/labs/skeleton/Account.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/mum/cs/cs525/labs/skeleton/AccountBehaviour.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/mum/cs/cs525/labs/skeleton/AccountService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/mum/cs/cs525/labs/skeleton/AccountService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/mum/cs/cs525/labs/skeleton/AccountServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/mum/cs/cs525/labs/skeleton/AccountServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/mum/cs/cs525/labs/skeleton/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/mum/cs/cs525/labs/skeleton/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/mum/cs/cs525/labs/skeleton/Checking.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/mum/cs/cs525/labs/skeleton/Checking.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/mum/cs/cs525/labs/skeleton/CheckingAcc.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/mum/cs/cs525/labs/skeleton/CheckingAcc.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/mum/cs/cs525/labs/skeleton/Saving.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/mum/cs/cs525/labs/skeleton/Saving.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/mum/cs/cs525/labs/skeleton/SavingAcc.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/mum/cs/cs525/labs/skeleton/SavingAcc.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2fwFrrl6Cn7OOgq0A3qzLh4yQr5" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "ruby.rails.projectView.checked": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2ea0b959-0462-4ef7-b11c-4e5f97b723c0" name="Changes" comment="" />
+      <created>1714704454200</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1714704454200</updated>
+      <workItem from="1714704457679" duration="5135000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
