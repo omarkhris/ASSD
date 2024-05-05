@@ -9,9 +9,13 @@ public class Checking implements AccountBehaviour{
     public double interestRate(double balance) {
         double interestRate = 0;
         if(balance < 1000){
-            interestRate = balance + (balance * 0.015);
+            interestRate = (balance * 0.015);
+            balance -= interestRate;
         }
-        else interestRate = balance + (balance * 0.025);
-        return interestRate;
+        else {
+            interestRate = (balance * 0.025);
+            balance -= interestRate;
+        }
+        return balance;
     }
 }

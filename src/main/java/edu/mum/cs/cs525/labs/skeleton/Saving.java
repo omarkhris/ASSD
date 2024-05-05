@@ -13,9 +13,13 @@ public class Saving implements AccountBehaviour {
         if(balance < 1000){
             interestRate = balance + (balance * 0.01);
         }else if(balance > 1000 && balance < 5000){
-            interestRate = balance + (balance * 0.02);
+            interestRate = (balance * 0.02);
+            balance -= interestRate;
         }
-        else interestRate = balance + (balance * 0.04);
-        return interestRate;
+        else {
+            interestRate = (balance * 0.04);
+            balance -= interestRate;
+        }
+        return balance;
     }
 }
