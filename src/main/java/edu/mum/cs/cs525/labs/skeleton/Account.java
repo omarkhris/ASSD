@@ -38,6 +38,10 @@ public class Account {
 		return balance;
 	}
 
+	private void setAccountBalance(){
+
+	}
+
 	public void deposit(double amount) {
 		AccountEntry entry = new AccountEntry(amount, "deposit", "", "");
 		entryList.add(entry);
@@ -89,7 +93,8 @@ public class Account {
 		double interest = accountBehaviour.interestRate(balance);
 		System.out.println("Interest calculated: " + interest);
 		// Add the interest to the account balance
-		deposit(interest);
+		double interest_Deduction = balance - interest;
+		withdraw(interest_Deduction);
 	}
 
 }

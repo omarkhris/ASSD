@@ -10,4 +10,8 @@ public interface AccountService {
     void withdraw (String accountNumber, double amount);
     void transferFunds(String fromAccountNumber, String toAccountNumber, double amount, String description);
 
+    void redoDeposit(String accountNumber);
+
+    void undoDeposit(String accountNumber);
+
 }
