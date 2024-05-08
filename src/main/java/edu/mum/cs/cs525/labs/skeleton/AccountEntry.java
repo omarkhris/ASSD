@@ -60,5 +60,19 @@ public class AccountEntry {
 	public void setFromPersonName(String fromPersonName) {
 		this.fromPersonName = fromPersonName;
 	}
-	
+
+
+
+		@Override
+		public String toString() {
+			return "AccountEntry{" +
+					"date=" + date +
+					", amount=" + amount +
+					", description='" + description + '\'' +
+					", fromAccountNumber='" + fromAccountNumber + '\'' +
+					", fromPersonName='" + fromPersonName + '\'' +
+					'}';
+		}
+
+
 }

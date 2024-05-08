@@ -20,7 +20,7 @@ public class DepositCommand implements CommandInterface{
 
 
     @Override
-    public void executeDeposit() {
+    public void executeCommand() {
         AccountEntry[] arr = account.getEntryList().toArray(new AccountEntry[0]);
         for(int i = arr.length - 1; i >= 0; i--){
             AccountEntry accountEntry = arr[i];
@@ -37,7 +37,7 @@ public class DepositCommand implements CommandInterface{
     }
 
     @Override
-    public void undoDeposit() {
+    public void undoCommand() {
         AccountEntry[] arr = account.getEntryList().toArray(new AccountEntry[0]);
 
         for(int i = arr.length - 1; i >= 0; i--){

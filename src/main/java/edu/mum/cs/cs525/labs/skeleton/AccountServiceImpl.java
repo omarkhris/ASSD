@@ -1,5 +1,6 @@
 package edu.mum.cs.cs525.labs.skeleton;
 
+import edu.mum.cs.cs525.labs.skeleton.command.CommandInterface;
 import edu.mum.cs.cs525.labs.skeleton.command.DepositCommand;
 
 import java.util.Collection;
@@ -8,7 +9,7 @@ import java.util.Optional;
 public class AccountServiceImpl implements AccountService {
 	private AccountDAO accountDAO;
 
-	private DepositCommand depositCommand;
+	private CommandInterface performCommand;
 	
 	public AccountServiceImpl(){
 		accountDAO = new AccountDAOImpl();
@@ -67,26 +68,37 @@ public class AccountServiceImpl implements AccountService {
 	}
 
 	@Override
-	public void redoDeposit(String accountNumber) {
+	public Account getAccountByName(String nameHolder) {
+
+		return null;
+	}
+
+	@Override
+	public void redo( String accountNumber) {
 			Optional<Account> account = Optional.ofNullable(accountDAO.loadAccount(accountNumber));
 			if(account.isPresent()) {
-				depositCommand = new DepositCommand(account.get());
-				depositCommand.executeDeposit();
+				performCommand.executeCommand();
 			}
 			else System.out.println("No such account!!");
 	}
 
 	@Override
-	public void undoDeposit(String accountNumber) {
+	public void undo(String accountNumber) {
 
 		Optional<Account> account = Optional.ofNullable(accountDAO.loadAccount(accountNumber));
 		if(account.isPresent()){
-			depositCommand = new DepositCommand(account.get());
-			depositCommand.undoDeposit();
+			performCommand.undoCommand();
 		}
 		else System.out.println("No such account!!");
 
 	}
+
+	@Override
+	public void setCommand(CommandInterface command){
+		this.performCommand = command;
+	}
+
+
 
 
 }

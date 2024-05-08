@@ -1,8 +1,7 @@
 package edu.mum.cs.cs525.labs.skeleton;
 
-import edu.mum.cs.cs525.labs.skeleton.Decorator.FirstPromotion;
-import edu.mum.cs.cs525.labs.skeleton.Decorator.SecondPromotion;
-import edu.mum.cs.cs525.labs.skeleton.Decorator.ThirdPromotion;
+import edu.mum.cs.cs525.labs.skeleton.command.DepositCommand;
+import edu.mum.cs.cs525.labs.skeleton.command.TransferCommand;
 
 public class Application {
 	public static void main(String[] args) {
@@ -10,7 +9,6 @@ public class Application {
 
 		// create 2 accounts;
 		accountService.createAccount("1263862", "Frank Brown",	"checking");
-
 		accountService.createAccount("4253892", "John Doe", "saving");
 
 		// use account 1;
@@ -19,12 +17,12 @@ public class Application {
 		accountService.withdraw("1263862", 230);
 		// use account 2;
 		accountService.deposit("4253892", 12450);
-		accountService.transferFunds("4253892", "1263862", 100, "payment of invoice 10232");
+		accountService.transferFunds("4253892", "1263862", 100, "Transaction");
 		// show balances
 
 //		for (Account account : accountService.getAllAccounts()) {
 //			double amount = accountService.getAccount(account.getAccountNumber()).accountBehaviour.interestRate(accountService.getAccount(account.getAccountNumber()).getBalance());
-////			accountService.withdraw(account.getAccountNumber(), amount);
+//			accountService.withdraw(account.getAccountNumber(), amount);
 //		}
 
 		for (Account account : accountService.getAllAccounts()) {
@@ -68,9 +66,20 @@ public class Application {
 //		System.out.println(accountService.getAccount("1263862").getBalance());
 		accountService.getAccount("4253892").performInterestRate();
 		accountService.getAccount("1263862").performInterestRate();
-		accountService.redoDeposit("1263862");
-		accountService.undoDeposit("4253892");
-		accountService.undoDeposit("4253892e");
+		DepositCommand dp = new DepositCommand(accountService.getAccount("1263862"));
+		accountService.setCommand(dp);
+		accountService.redo("1263862");
+		dp = new DepositCommand(accountService.getAccount("4253892"));
+		accountService.setCommand(dp);
+		accountService.undo("4253892");
+		TransferCommand TC = new TransferCommand(accountService.getAccount("4253892"));
+		accountService.setCommand(TC);
+		accountService.redo("4253892");
+
+//		WithDrawCommand wc = new WithDrawCommand(accountService.getAccount("4253892"));
+//		accountService.setCommand(wc);
+//		accountService.undo("4253892");
+//		accountService.redo("4253892");
 
 
 
