@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d5e541d8-3350-4c3f-9157-8535e303c0af" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/mum/cs/cs525/labs/skeleton/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/mum/cs/cs525/labs/skeleton/AccountServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/mum/cs/cs525/labs/skeleton/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/mum/cs/cs525/labs/skeleton/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/mum/cs/cs525/labs/skeleton/command/TransferCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/mum/cs/cs525/labs/skeleton/command/TransferCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/mum/cs/cs525/labs/skeleton/AccountServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/mum/cs/cs525/labs/skeleton/AccountServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/mum/cs/cs525/labs/skeleton/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/mum/cs/cs525/labs/skeleton/Application.class" afterDir="false" />
-    </list>
+    <list default="true" id="d5e541d8-3350-4c3f-9157-8535e303c0af" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,6 +19,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="lab6" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
