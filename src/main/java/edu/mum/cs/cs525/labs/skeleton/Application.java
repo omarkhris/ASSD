@@ -75,6 +75,9 @@ public class Application {
 		TransferCommand TC = new TransferCommand(accountService.getAccount("4253892"));
 		accountService.setCommand(TC);
 		accountService.redo("4253892");
+		TC = new TransferCommand(accountService.getAccount("1263862"));
+		accountService.setCommand(TC);
+		accountService.undo("1263862");
 
 //		WithDrawCommand wc = new WithDrawCommand(accountService.getAccount("4253892"));
 //		accountService.setCommand(wc);
