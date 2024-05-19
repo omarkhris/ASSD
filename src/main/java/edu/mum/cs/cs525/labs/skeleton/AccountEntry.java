@@ -61,22 +61,16 @@ public class AccountEntry {
 		this.fromPersonName = fromPersonName;
 	}
 
-<<<<<<< HEAD
 
+	@Override
+	public String toString() {
+		return "AccountEntry{" +
+				"date=" + date +
+				", amount=" + amount +
+				", description='" + description + '\'' +
+				", fromAccountNumber='" + fromAccountNumber + '\'' +
+				", fromPersonName='" + fromPersonName + '\'' +
+				'}';
+	}
 
-		@Override
-		public String toString() {
-			return "AccountEntry{" +
-					"date=" + date +
-					", amount=" + amount +
-					", description='" + description + '\'' +
-					", fromAccountNumber='" + fromAccountNumber + '\'' +
-					", fromPersonName='" + fromPersonName + '\'' +
-					'}';
-		}
-
-
-=======
->>>>>>> de7fa1a (Factory Pattern SOl)
 }
-

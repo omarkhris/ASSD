@@ -9,11 +9,10 @@ import java.util.Optional;
 public class AccountServiceImpl implements AccountService {
 	private AccountDAO accountDAO;
 
-<<<<<<< HEAD
+
 	private CommandInterface performCommand;
 	
-=======
->>>>>>> de7fa1a (Factory Pattern SOl)
+
 	public AccountServiceImpl(){
 		accountDAO = new AccountDAOImpl();
 	}
@@ -59,42 +58,40 @@ public class AccountServiceImpl implements AccountService {
 		accountDAO.updateAccount(fromAccount);
 		accountDAO.updateAccount(toAccount);
 	}
-<<<<<<< HEAD
-
-	@Override
-	public Account getAccountByName(String nameHolder) {
-
-		return null;
-	}
-
-	@Override
-	public void redo( String accountNumber) {
-			Optional<Account> account = Optional.ofNullable(accountDAO.loadAccount(accountNumber));
-			if(account.isPresent()) {
-				performCommand.executeCommand();
-			}
-			else System.out.println("No such account!!");
-	}
-
-	@Override
-	public void undo(String accountNumber) {
-
-		Optional<Account> account = Optional.ofNullable(accountDAO.loadAccount(accountNumber));
-		if(account.isPresent()){
-			performCommand.undoCommand();
-		}
-		else System.out.println("No such account!!");
-
-	}
-
-	@Override
-	public void setCommand(CommandInterface command){
-		this.performCommand = command;
-	}
 
 
+//	@Override
+//	public Account getAccountByName(String nameHolder) {
+//
+//		return null;
+//	}
+//
+//	@Override
+//	public void redo( String accountNumber) {
+//			Optional<Account> account = Optional.ofNullable(accountDAO.loadAccount(accountNumber));
+//			if(account.isPresent()) {
+//				performCommand.executeCommand();
+//			}
+//			else System.out.println("No such account!!");
+//	}
+//
+//	@Override
+//	public void undo(String accountNumber) {
+//
+//		Optional<Account> account = Optional.ofNullable(accountDAO.loadAccount(accountNumber));
+//		if(account.isPresent()){
+//			performCommand.undoCommand();
+//		}
+//		else System.out.println("No such account!!");
+//
+//	}
+//
+//	@Override
+//	public void setCommand(CommandInterface command){
+//		this.performCommand = command;
+//	}
 
 
-=======
->>>>>>> de7fa1a (Factory Pattern SOl)
+
+
 }

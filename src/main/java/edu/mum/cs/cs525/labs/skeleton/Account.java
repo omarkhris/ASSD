@@ -31,7 +31,7 @@ public class Account {
 		return balance;
 	}
 
-	private void setAccountBalance(){
+	private void setAccountBalance() {
 
 	}
 
@@ -72,34 +72,7 @@ public class Account {
 		return entryList;
 	}
 
-<<<<<<< HEAD
-
-	public void setAccountBehaviour(AccountBehaviour accountBehaviour) {
-		this.accountBehaviour = accountBehaviour;
-	}
-
-	public void performInterestRate() {
-		if (accountBehaviour == null) {
-			System.err.println("Error: accountBehaviour is null");
-			return;
-		}
-		double balance = getBalance();
-		double interest = accountBehaviour.interestRate(balance);
-		System.out.println("Interest calculated: " + interest);
-		// Add the interest to the account balance
-		double interest_Deduction = balance - interest;
-		withdraw(interest_Deduction);
-	}
-
-
-//	@Override
-//	public String toString() {
-//		return accountNumber;
-//
-//	}
 
 
 
-=======
->>>>>>> de7fa1a (Factory Pattern SOl)
 }
