@@ -5,8 +5,6 @@ import java.util.Collection;
 import java.util.List;
 
 public class Account {
-
-	AccountBehaviour accountBehaviour;
 	private Customer customer;
 
 	private String accountNumber;
@@ -15,11 +13,6 @@ public class Account {
 
 	public Account(String accountNumber) {
 		this.accountNumber = accountNumber;
-	}
-
-	public Account(String accountNumber, AccountBehaviour accountBehaviour){
-		this.accountNumber = accountNumber;
-		this.accountBehaviour = accountBehaviour;
 	}
 
 	public String getAccountNumber() {
@@ -61,9 +54,9 @@ public class Account {
 				toAccount.getCustomer().getName());
 		AccountEntry toEntry = new AccountEntry(amount, description, toAccount.getAccountNumber(),
 				toAccount.getCustomer().getName());
-		
+
 		entryList.add(fromEntry);
-		
+
 		toAccount.addEntry(toEntry);
 	}
 
@@ -79,6 +72,7 @@ public class Account {
 		return entryList;
 	}
 
+<<<<<<< HEAD
 
 	public void setAccountBehaviour(AccountBehaviour accountBehaviour) {
 		this.accountBehaviour = accountBehaviour;
@@ -106,4 +100,6 @@ public class Account {
 
 
 
+=======
+>>>>>>> de7fa1a (Factory Pattern SOl)
 }

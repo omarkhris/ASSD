@@ -8,7 +8,7 @@ public class AccountEntry {
 	private String description;
 	private String fromAccountNumber;
 	private String fromPersonName;
-	
+
 	public AccountEntry() {
 	}
 
@@ -61,6 +61,7 @@ public class AccountEntry {
 		this.fromPersonName = fromPersonName;
 	}
 
+<<<<<<< HEAD
 
 
 		@Override
@@ -75,4 +76,7 @@ public class AccountEntry {
 		}
 
 
+=======
+>>>>>>> de7fa1a (Factory Pattern SOl)
 }
+

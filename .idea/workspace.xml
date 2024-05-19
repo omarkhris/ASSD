@@ -5,13 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5e541d8-3350-4c3f-9157-8535e303c0af" name="Changes" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/src/main/java/edu/mum/cs/cs525/labs/skeleton/command/TransferCommand.java" afterDir="false" />
+=======
+>>>>>>> de7fa1a (Factory Pattern SOl)
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/mum/cs/cs525/labs/skeleton/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/mum/cs/cs525/labs/skeleton/Account.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/mum/cs/cs525/labs/skeleton/AccountEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/mum/cs/cs525/labs/skeleton/AccountEntry.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/mum/cs/cs525/labs/skeleton/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/mum/cs/cs525/labs/skeleton/AccountService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/mum/cs/cs525/labs/skeleton/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/mum/cs/cs525/labs/skeleton/AccountServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/mum/cs/cs525/labs/skeleton/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/mum/cs/cs525/labs/skeleton/Application.java" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/mum/cs/cs525/labs/skeleton/command/CommandInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/mum/cs/cs525/labs/skeleton/command/CommandInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/mum/cs/cs525/labs/skeleton/command/DepositCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/mum/cs/cs525/labs/skeleton/command/DepositCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/edu/mum/cs/cs525/labs/skeleton/AccountService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/mum/cs/cs525/labs/skeleton/AccountService.class" afterDir="false" />
@@ -19,6 +23,11 @@
       <change beforePath="$PROJECT_DIR$/target/classes/edu/mum/cs/cs525/labs/skeleton/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/mum/cs/cs525/labs/skeleton/Application.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/edu/mum/cs/cs525/labs/skeleton/command/CommandInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/mum/cs/cs525/labs/skeleton/command/CommandInterface.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/edu/mum/cs/cs525/labs/skeleton/command/DepositCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/mum/cs/cs525/labs/skeleton/command/DepositCommand.class" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/mum/cs/cs525/labs/skeleton/CheckingAcc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/mum/cs/cs525/labs/skeleton/CheckingAcc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/mum/cs/cs525/labs/skeleton/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/mum/cs/cs525/labs/skeleton/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/mum/cs/cs525/labs/skeleton/SavingAcc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/mum/cs/cs525/labs/skeleton/SavingAcc.java" afterDir="false" />
+>>>>>>> de7fa1a (Factory Pattern SOl)
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +60,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
@@ -60,6 +70,31 @@
     &quot;ruby.rails.projectView.checked&quot;: &quot;true&quot;
   }
 }</component>
+=======
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "extract.method.default.visibility": "private",
+    "ruby.rails.projectView.checked": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+>>>>>>> de7fa1a (Factory Pattern SOl)
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -69,7 +104,11 @@
       <option name="presentableId" value="Default" />
       <updated>1714926547920</updated>
       <workItem from="1714926552163" duration="5584000" />
+<<<<<<< HEAD
       <workItem from="1715088155860" duration="26628000" />
+=======
+      <workItem from="1716153700327" duration="4209000" />
+>>>>>>> de7fa1a (Factory Pattern SOl)
     </task>
     <servers />
   </component>

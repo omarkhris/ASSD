@@ -9,24 +9,17 @@ import java.util.Optional;
 public class AccountServiceImpl implements AccountService {
 	private AccountDAO accountDAO;
 
+<<<<<<< HEAD
 	private CommandInterface performCommand;
 	
+=======
+>>>>>>> de7fa1a (Factory Pattern SOl)
 	public AccountServiceImpl(){
 		accountDAO = new AccountDAOImpl();
 	}
 
-	public Account createAccount(String accountNumber, String customerName, String accountType) {
-		Account account;
-		if ("checking".equalsIgnoreCase(accountType)) {
-			account = new CheckingAcc(accountNumber);
-			account.setAccountBehaviour(new Checking());
-		} else if ("saving".equalsIgnoreCase(accountType)) {
-			account = new SavingAcc(accountNumber);
-			account.setAccountBehaviour(new Saving());
-		} else {
-			throw new IllegalArgumentException("Invalid account type: " + accountType);
-		}
-
+	public Account createAccount(String accountNumber, String customerName) {
+		Account account = new Account(accountNumber);
 		Customer customer = new Customer(customerName);
 		account.setCustomer(customer);
 
@@ -38,7 +31,7 @@ public class AccountServiceImpl implements AccountService {
 	public void deposit(String accountNumber, double amount) {
 		Account account = accountDAO.loadAccount(accountNumber);
 		account.deposit(amount);
-		
+
 		accountDAO.updateAccount(account);
 	}
 
@@ -66,6 +59,7 @@ public class AccountServiceImpl implements AccountService {
 		accountDAO.updateAccount(fromAccount);
 		accountDAO.updateAccount(toAccount);
 	}
+<<<<<<< HEAD
 
 	@Override
 	public Account getAccountByName(String nameHolder) {
@@ -101,4 +95,6 @@ public class AccountServiceImpl implements AccountService {
 
 
 
+=======
+>>>>>>> de7fa1a (Factory Pattern SOl)
 }
